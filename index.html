@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ドリンク作成トレーニング</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 追加 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ドリンク作成トレーニング</h1>
+
+    <!-- 検索バー -->
+    <input type="text" id="search-bar" placeholder="ドリンク名や材料で検索">
+
+    <!-- ドリンクのリスト -->
+    <div id="drink-list">
+        <!-- ドリンクのリストがここに表示されます -->
+    </div>
+
+    <!-- レシピ表示エリア -->
+    <div id="recipe" style="display: none;">
+        <button id="back-button">戻る</button>
+        <h2 id="drink-name"></h2>
+        <h3>材料</h3>
+        <ul id="ingredients">
+            <!-- 材料のリストがここに表示されます -->
+        </ul>
+        <h3>作成手順</h3>
+        <ol id="steps">
+            <!-- 作成手順がここに表示されます -->
+        </ol>
+        <!-- クイズモードへのボタン -->
+        <button id="quiz-button">クイズモードへ</button>
+    </div>
+
+    <!-- クイズモード表示エリア -->
+    <div id="quiz" style="display: none;">
+        <h2>クイズモード</h2>
+        <p id="quiz-question"></p>
+        <input type="text" id="quiz-answer" placeholder="回答を入力">
+        <button id="submit-answer">回答する</button>
+        <p id="quiz-result"></p>
+        <button id="quiz-back-button">戻る</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

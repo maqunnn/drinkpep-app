@@ -1,0 +1,117 @@
+/* リセットCSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', '游ゴシック Medium', '游ゴシック体', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#drink-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.drink-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: calc(100% - 40px); /* スマホ画面での幅調整 */
+    max-width: 300px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.drink-item:hover {
+    background-color: #f0f0f0;
+}
+
+#recipe, #quiz {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#back-button, #quiz-button, #submit-answer, #quiz-back-button {
+    margin: 10px 5px;
+    padding: 15px 20px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #007aff;
+    color: #fff;
+}
+
+#back-button:hover, #quiz-button:hover, #submit-answer:hover, #quiz-back-button:hover {
+    background-color: #005bb5;
+}
+
+h2, h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#ingredients, #steps {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+#ingredients li, #steps li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#quiz-answer {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#quiz-result {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    .drink-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .drink-item {
+        width: calc(33.333% - 40px);
+    }
+}
